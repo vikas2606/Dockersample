@@ -1,9 +1,7 @@
 import json
-with open("sample.json") as JsonFile:
-    data=json.load(JsonFile)
+with open("sample.json") as x:
+    data=json.load(x)
     jsondata=data("server")
-    for x in jsondata:
-        header=x.keys()
-        print(header)
-        values=x.values()
+    for i in jsondata:
+        values=i.values()
         print(values)
